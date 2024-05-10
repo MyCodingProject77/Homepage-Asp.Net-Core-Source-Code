@@ -1,0 +1,138 @@
+
+
+ Home - Index.cshtml
+
+
+   @{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+
+    <h2>Welcome to Hyatt Hotel</h2>
+    <h3>Dear Guest, Please book now. Before booking please see the rooms below</h3>
+
+    <div class="myDiv">
+        <img src="/images/hotel.jpg" alt="Jane">
+    </div>
+
+    <div class="card">
+        <img src="/images/deluxe1.jpg" alt="Jane">
+        <div class="container">
+            <h2>Deluxe Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/deluxe2.jpg" alt="Jane">
+        <div class="container">
+            <h2>Deluxe Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/double.jpg" alt="Jane">
+        <div class="container">
+            <h2>Double Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/single.jpg" alt="Jane">
+        <div class="container">
+            <h2>Single Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/triple.jpg" alt="Jane">
+        <div class="container">
+            <h2>Triple Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/images/standard.jpg" alt="Jane">
+        <div class="container">
+            <h2>Standard Room</h2>
+            <a asp-controller="Bookings" asp-action="Create">
+                <input type="button" class="btn btn-primary" value="Book Now">
+            </a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+
+    site.css
+
+
+    .myDiv img {
+    height: 400px;
+    width: 100%;
+    margin-left: 5px;
+  
+
+}
+
+img {
+    width: 200px;
+    height: 120px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+h3 {
+    color: purple;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: #0000ff;
+}
